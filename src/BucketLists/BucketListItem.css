@@ -1,0 +1,23 @@
+.bucket-lists__item {
+  max-width: 100%;
+  padding: 15px;
+  box-shadow: 0 2px 4px #ddd;
+  border-radius: 10px;
+  display: flex;
+  margin-top: 15px;
+  background-color: white;
+}
+.bucket-lists__item p {
+  margin: 0;
+}
+.bucket-lists__item small {
+  font-size: 80%;
+  color: gray;
+}
+.bucket-lists__item input {
+  width: 16px;
+  height: 16px;
+}
+.bucket-lists__title {
+  padding-left: 10px;
+}

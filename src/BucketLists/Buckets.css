@@ -1,0 +1,10 @@
+.buckets {
+    max-width: 370px;
+    margin: 0 auto 4rem;
+  }
+  @media (max-width: 375px) {
+    .buckets {
+      padding: 0 1rem;
+    }
+  }
+  

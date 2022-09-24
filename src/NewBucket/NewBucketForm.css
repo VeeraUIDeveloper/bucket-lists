@@ -1,0 +1,51 @@
+.new-bucket form {
+  padding: 15px;
+  box-shadow: 0 2px 4px #ddd;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: white;
+}
+.new-bucket h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0;
+}
+.new-bucket__control {
+  display: flex;
+  flex-wrap: wrap;
+}
+.new-bucket__control label {
+  display: block;
+  font-weight: 500;
+}
+.new-bucket__control input {
+  font: inherit;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid #ddd;
+  margin-bottom: 0.75rem;
+}
+.new-bucket__actions {
+  text-align: right;
+}
+.new-bucket__actions .submit-button {
+  border-color: orange;
+  background-color: orange;
+  margin-left: 15px;
+  color: white;
+}
+.new-bucket__actions .submit-button:hover,
+.new-bucket__actions .submit-button:active {
+  background-color: darkorange;
+}
+.new-bucket__actions .cancel-button {
+  border-color: #ccc;
+  background-color: transparent;
+  color: #212121;
+  width: 80px;
+}
+.new-bucket__actions .cancel-button:hover,
+.new-bucket__actions .cancel-button:focus {
+  background-color: #eee;
+}

@@ -1,0 +1,25 @@
+.new-bucket {
+  max-width: 370px;
+  margin: 2rem auto;
+  text-align: center;
+}
+@media (max-width: 375px) {
+  .new-bucket {
+    padding: 0 1rem;
+  }
+}
+.new-bucket button {
+  font: inherit;
+  width: 120px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 4px #ddd;
+  padding: 0.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.new-bucket .add-new-button {
+  border-color: orange;
+  background-color: orange;
+  color: white;
+}

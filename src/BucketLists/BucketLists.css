@@ -1,0 +1,13 @@
+.bucket-lists {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bucket-lists__empty {
+  text-align: center;
+}
+.bucket-lists__empty p {
+  background: #e7e8ed;
+  padding: 0.5rem;
+  border-radius: 5px;
+}

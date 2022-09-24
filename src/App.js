@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import NewBucket from "./NewBucket/NewBucket";
+import Buckets from "./BucketLists/Buckets";
+
+const DUMMY_BUCKETS = [
+  {
+    id: 1,
+    title: "Job Interview",
+    date: new Date(2022, 9, 14),
+  },
+  {
+    id: 2,
+    title: "House loan",
+    date: new Date(2022, 10, 15),
+  },
+  {
+    id: 3,
+    title: "Stock market trading",
+    date: new Date(2021, 8, 10),
+  },
+];
 
 function App() {
+  const [buckets, setBucketList] = useState(DUMMY_BUCKETS);
+
+  const addBucketHandler = (bucketData) => {
+    setBucketList((previousState) => {
+      return [bucketData, ...previousState];
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <NewBucket addBucket={addBucketHandler} />
+      <Buckets items={buckets} />
+      <Footer />
+    </>
   );
 }
 
