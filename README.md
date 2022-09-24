@@ -1,3 +1,7 @@
+# Bucket Lists - React App
+
+My first simple web app by using React JS with learning Git, Github.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
